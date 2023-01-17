@@ -1,0 +1,15 @@
+{
+  "name": "lab5",
+  "version": "1.0.0",
+  "description": "lab five",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kehan",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^21.3.1"
+  }
+}

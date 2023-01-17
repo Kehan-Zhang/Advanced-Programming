@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content= "default-src 'self' 'unsafe-inline'; 
+                style-src 'self' 'unsafe-inline';
+                script-src 'self' 'unsafe-eval' 'unsafe-inline' 'unsafe-hashes';
+                img-src 'self' data:;"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content= "default-src 'self' 'unsafe-inline'; 
+                style-src 'self' 'unsafe-inline';
+                script-src 'self' 'unsafe-eval' 'unsafe-inline' 'unsafe-hashes';
+                img-src 'self' data:;"
+    />
+    <title>Webcom with Filters</title>
+    <link rel = "stylesheet" href = "css/style.css">
+  </head>
+  <body>
+    <div class = "top-container">
+        <video autoplay id="originVideo"></video>
+        <video autoplay id="filterVideo"></video>
+    </div>
+   
+    <div class = "middle-container">
+        <label>Filters: </label>
+
+        <select id="filter">
+            <option value="none">Origin</option>
+            <option value="blur(10px)">Blur</option>
+            <option value="grayScale(100%)">Grayscale</option>
+            <option value="invert(100%)">Invert</option>
+            <option value="sepia(100%)">Sepia</option>
+            <option value="contrast(200%)">Contrast</option>
+        </select>
+
+        <button id = "takePhoto">Take Photo</button>
+        <button id = "clear">Clear</button>
+        <canvas id = "canvas"></canvas>
+    </div>
+
+    <div class = "bottom-container">
+        <div id = "photos"></div>
+    </div>
+
+    <script src = "./client.js"></script>
+  </body>
+
+</html>

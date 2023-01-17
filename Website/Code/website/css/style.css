@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#canvas {
+    display: none;
+}
+
+.top-container {
+    width: 1000px;
+    margin: 30px auto;
+}
+
+.middle-container {
+    width: 400px;
+    margin: 30px auto;
+}
+
+.bottom-container {
+    margin: auto;
+    padding: 10px;
+}

@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "ws": "^8.2.3"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "lab5",
+  "version": "1.0.0",
+  "description": "lab five electron",
+  "main": "main.js",
+  "author": "Kehan",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.0.0"
+  }
+}
